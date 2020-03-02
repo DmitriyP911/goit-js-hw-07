@@ -26,3 +26,21 @@ button {
     background: #ddd;
     box-shadow: 0 1px rgba(0,0,0,.1) inset, 0 1px #fff;
 }
+
+#validation-input {
+    border: 3px solid #bdbdbd;
+  }
+  
+  #validation-input.valid {
+    border-color: #4caf50;
+  }
+  
+  #validation-input.invalid {
+    border-color: #f44336;
+  }
+
+  .size-change {
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+  }
