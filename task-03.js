@@ -22,7 +22,7 @@ const images = [
     },
 ];
 
-const arrImages = images.reduce( ( liStr, elem ) => liStr + `<li><img scr="${elem.src}" alt="${elem.alt}"></li>`, `` );
+const arrImages = images.reduce( ( liStr, elem ) => liStr + `<li><img src="${elem.src}" alt="${elem.alt}"></li>`, `` );
 
 gallery.insertAdjacentHTML( `beforeend`, arrImages );
 
