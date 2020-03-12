@@ -44,3 +44,8 @@ button {
     margin: 0 auto;
     padding-bottom: 200px;
   }
+
+img {
+  width: 300px;
+  height: 300px;
+}

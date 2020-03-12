@@ -22,14 +22,44 @@ const images = [
     },
 ];
 
-function createImg ( array ) {
-    for( let obj of array ) {
-        gallery.insertAdjacentHTML( `beforeend`, `<li><img></img></li>` );
-        for( let key in obj ) {
-            gallery.lastElementChild.lastElementChild.setAttribute( `${key}`, `${obj[key]}` );
-            gallery.lastElementChild.lastElementChild.setAttribute( `class`, `imgStyle` );
-        }
-    }
-}
+const arrImages = images.reduce( ( liStr, elem ) => liStr + `<li><img scr="${elem.src}" alt="${elem.alt}"></li>`, `` );
 
-createImg( images );
+gallery.insertAdjacentHTML( `beforeend`, arrImages );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function createImg ( array ) {
+//     for( let obj of array ) {
+//         gallery.insertAdjacentHTML( `beforeend`, ` < li > <img></img></li > ` );
+//         for( let key in obj ) {
+//             gallery.lastElementChild.lastElementChild.setAttribute( `${key}`, `${obj[key]}` );
+//             gallery.lastElementChild.lastElementChild.setAttribute( `class`, `imgStyle` );
+//         }
+//     }
+// }
+
+// createImg( images );

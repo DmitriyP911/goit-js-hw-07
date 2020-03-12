@@ -11,7 +11,12 @@ const ingredients = [
     'Приправы',
 ];
 
-for( let elem of ingredients ) {
-    ingredientsList.insertAdjacentHTML( `afterbegin`, `<li>${elem}</li>` );
-};
+ingredients.map( elem => {
+    const li = document.createElement( `li` );
+    const liArr = [];
+    li.textContent = elem;
+    liArr.push( li );
+    ingredientsList.append( ...liArr );
+} );
+
 console.log( ingredientsList );

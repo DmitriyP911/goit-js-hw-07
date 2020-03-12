@@ -5,7 +5,6 @@ const input = controls.firstElementChild;
 const renderButton = document.querySelector( `button[data-action="render"]` );
 const destroyButton = document.querySelector( `button[data-action="destroy"]` );
 const boxes = document.getElementById( `boxes` );
-boxes.style.display = `flex`;
 let boxValues;
 
 input.addEventListener( `input`, event => {
@@ -35,6 +34,6 @@ function buildNewBoxes ( value ) {
         }
         boxes.append( ...arr );
     } else {
-        alert( `Box value must be for 1 to 100` )
+        alert( `Box value must be for 1 to 100` );
     }
 };
