@@ -11,12 +11,10 @@ const ingredients = [
     'Приправы',
 ];
 
-ingredients.map( elem => {
+const liArr = ingredients.map( elem => {
     const li = document.createElement( `li` );
-    const liArr = [];
     li.textContent = elem;
-    liArr.push( li );
-    ingredientsList.append( ...liArr );
+    return li;
 } );
 
-console.log( ingredientsList );
+ingredientsList.append( ...liArr );
