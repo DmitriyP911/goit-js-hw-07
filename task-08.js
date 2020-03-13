@@ -24,7 +24,7 @@ function buildNewBoxes ( value ) {
     if( boxValues > 0 && boxValues <= 100 ) {
         const arr = [];
         let boxSize = 30;
-        for( let i = 0; i <= value; i += 1 ) {
+        for( let i = 1; i <= value; i += 1 ) {
             const div = document.createElement( `div` );
             div.style.width = boxSize + `px`;
             div.style.height = boxSize + `px`;

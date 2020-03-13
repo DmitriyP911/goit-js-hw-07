@@ -8,6 +8,6 @@ console.log( `В списке ${catogoriesValue} категории` );
 const categoryArray = document.querySelectorAll( `.item` );
 
 for( let elem of categoryArray ) {
-    console.log( `Категория: `, elem.firstElementChild );
+    console.log( `Категория: `, elem.firstElementChild.textContent );
     console.log( `Количество элемментов: `, elem.lastElementChild.children.length )
 };
